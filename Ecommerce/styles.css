@@ -1,4 +1,8 @@
-
-.card{
-    margin-top: 60px;
+.navbar-brand{
+    width:25%;
 }
+
+.d-flex{
+    width: 50%;
+}
+

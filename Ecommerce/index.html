@@ -6,37 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <!-- barra de navegacion-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href=""><img src="./IMG/ARM.png" width="100px" alt=""></a>
-
-      <form class="d-flex">
-        <input class="form-control me-2 ms-5"  type="search"  placeholder="¿Que estas buscando"  aria-label="Search">
-        <button type="button" class="btn btn-dark">Buscar</button>
-      </form>
-      
+      <a class="navbar-brand" href="#">ARM</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse ms-5 navbar-collapse" id="navbarScroll">
+      <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><p class="text-primary">Iniciar Sesion</p></a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><img src="./IMG/campana.png" width="30px" alt=""></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img src="./IMG/carro-de-la-carretilla.png" width="30px" alt=""></a>
+            <a class="nav-link" href="#">Link</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="./IMG/me-gusta.png" width="30px" alt="">
+              Link
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
@@ -49,7 +41,10 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
           </li>
         </ul>
-   
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
@@ -84,49 +79,84 @@
   </div> 
 
   <!--cards1-->
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-   
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+
+  <section class="cartas">
+
+    <div class="d-flex justify-content-evenly">
+
+
+      <div class="card" style="width: 18rem;">
+        <img src="./IMG/tecnologia.jpeg" class="card-img-top" alt="...">
+        <div class="card-body ">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+    
+    
+    
+    
+    
+      <div class="card" style="width: 18rem;">
+        <img src="./IMG/tecnologia.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
+    
+    
+    
+    
+    
+    
+  
     </div>
 
+  </section>
+
+
+
+  <div class="d-flex justify-content-evenly"  >
+    <div class="card" style="width: 18rem;">
+      <img src="./IMG/tecnologia.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+    <div class="card" style="width: 18rem;">
+      <img src="./IMG/tecnologia.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  
+  </div>
+
+
+ 
+  
 <!--Container-->
 
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container  my-5">
+<div class="container my-5">
   <!-- Footer -->
   <footer class="text-center text-white" style="background-color: #3f51b5">
     <!-- Grid container -->
-    <div class="container d-fluid">
+    <div class="container">
       <!-- Section: Links -->
       <section class="mt-5">
         <!-- Grid row-->
@@ -224,7 +254,7 @@
         >
     </div>
     <!-- Copyright -->
-  </footer >
+  </footer>
   <!-- Footer -->
 </div>
 <!-- End of .container -->

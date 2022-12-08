@@ -1,0 +1,16 @@
+{
+  "name": "apicomerce",
+  "version": "1.0.0",
+  "description": "apiComerce",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "node ./main.js"
+  },
+  "author": "Héctor Morales, Juan Rodríguez, Diego Marquínez, Juan José Arroyabe",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0"
+  }
+}

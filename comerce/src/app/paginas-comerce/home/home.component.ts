@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  url: string = "../assets/img1.jpg";
+  imageChange(event: any){
+      this.url = event.target.src;
+  }
   constructor() { }
 
   ngOnInit(): void {

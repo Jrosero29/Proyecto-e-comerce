@@ -1,1 +1,39 @@
-<p>productos works!</p>
+<table class="table table-bordered" *ngIf="registrosCreados();else sinArticulos">
+    <thead>
+     
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">infoProducto</th>
+        <td>Código</td>
+        <td>Producto</td>
+        <td>Precio</td>
+      </tr>
+      <tr *ngFor="let articulo of articulos">
+        <th scope="row" >-</th>
+        <td>{{articulo.codigo}}</td>
+        <td>{{articulo.nombre}}</td>
+        <td>{{articulo.precio}}</td>
+        <td> <button (click)="borrar(articulo.codigo)">borrar </button></td>
+      <td> <button (click)="seleccionar(articulo)">seleccionar</button></td>
+      </tr>
+     
+    </tbody>
+  </table>
+
+<ng-template #sinArticulos>vacio</ng-template>
+<div>
+  <p>
+    codigo: <input type="number" [(ngModel)]="articulo.codigo">
+  </p>
+  <p>
+    nombre: <input type="text" [(ngModel)]="articulo.nombre">
+  </p>
+  <p>
+    precio: <input type="number" [(ngModel)]="articulo.precio">
+  </p>
+  <p>
+    
+  </p>
+  <td> <button (click)="agregarElemento()">guardar</button></td>
+  <td> <button (click)="actualizar()">actualizar</button></td>

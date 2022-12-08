@@ -6,7 +6,7 @@ import {LoginComponent} from "./paginas-comerce/login/login.component";
 import {ProductosComponent} from "./paginas-comerce/productos/productos.component";
 const routes: Routes = [
 {
-  path:'**',
+  path:'',
   component:HomeComponent
 },
 {

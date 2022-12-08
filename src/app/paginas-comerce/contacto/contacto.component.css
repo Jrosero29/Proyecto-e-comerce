@@ -1,0 +1,39 @@
+#contact {
+
+	padding: 90px 0;
+	background:#2D3E40;
+}
+
+#contact h2 {
+    display: flex;
+    justify-content: center;
+	padding: 50px;
+    color:#2D3E40;
+}
+
+.contact-form {
+	background:linear-gradient(90deg, rgba(12,14,12,1) 31%, rgba(48,48,60,0.8869683615633753) 71%);
+	width: 50%;
+	margin: 20px auto;
+	padding: 70px 50px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px  #ffff;
+}
+
+.contact-form h5 {
+	text-align: center;
+	padding-bottom: 40px;
+	font-weight: 900;
+    color: #ffff;
+
+}
+
+.contact-form button {
+	width: 100%;
+}
+.form-group{
+    color: #ffff;
+}
+.label {
+    color: #ffff;
+}  

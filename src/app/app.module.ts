@@ -11,9 +11,10 @@ import { LoginComponent } from './paginas-comerce/login/login.component';
 import { ComponentescomerceModule } from './componentescomerce/componentescomerce.module';
 import { PaginasComerceModule } from './paginas-comerce/paginas-comerce.module';
 
+
 @NgModule({
   declarations: [
-    AppComponent,HomeComponent,ProductosComponent,ContactoComponent,LoginComponent
+    AppComponent,HomeComponent,ProductosComponent,ContactoComponent,LoginComponent, 
     
     
   ],

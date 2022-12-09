@@ -74,3 +74,12 @@ h6{
     color:#636363; 
     font-size: 1rem;  
 }
+.navbar-brand{
+    width: 15rem;
+}
+.d-flex{
+    width: 40rem;
+}
+.nav-item{
+    margin-left: 10rem;
+}

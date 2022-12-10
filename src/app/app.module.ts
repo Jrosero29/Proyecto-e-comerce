@@ -10,6 +10,7 @@ import { ContactoComponent } from './paginas-comerce/contacto/contacto.component
 import { LoginComponent } from './paginas-comerce/login/login.component';
 import { ComponentescomerceModule } from './componentescomerce/componentescomerce.module';
 import { PaginasComerceModule } from './paginas-comerce/paginas-comerce.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { PaginasComerceModule } from './paginas-comerce/paginas-comerce.module';
     AppRoutingModule,
     ComponentescomerceModule,
     PaginasComerceModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
  
 
 

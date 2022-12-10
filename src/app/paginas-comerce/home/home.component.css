@@ -8,3 +8,26 @@
     margin-left: 10rem;
 }
 
+body{
+    width: 100%;
+}
+
+
+.carousel-inner img {
+    width: 70px;
+    max-height: 450px;
+}
+
+.carousel-inner{
+    margin-top: 20px;
+    margin-left: 130px;
+ height: 100%;
+ width: 80%;
+ border-radius: 30px;
+}
+
+
+
+
+
+

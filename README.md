@@ -29,3 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Actualización angular componenetes.
 
 Modificación en los componentes de Angular e-commerce.
+prueba de los cambios del error

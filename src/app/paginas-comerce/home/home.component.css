@@ -1,6 +1,12 @@
 .navbar-brand{
     width: 15rem;
 }
+
+.navbar-brand img{
+    border-radius: 30px;
+    width: 80px;
+    opacity: 0.9;
+}
 .d-flex{
     width: 50rem;
 }
@@ -11,6 +17,10 @@
 body{
     width: 100%;
 }
+
+
+
+
 
 
 .carousel-inner img {
@@ -24,7 +34,27 @@ body{
  height: 100%;
  width: 80%;
  border-radius: 30px;
+} 
+
+
+@media screen and (max-width: 480px){
+    #carouselExampleIndicators{
+        height: auto;
+    }
+    #contenido{
+        width: auto;
+    }
+    #container-fluid{
+        display:none;
+    }
 }
+
+
+
+
+
+
+
 
 
 

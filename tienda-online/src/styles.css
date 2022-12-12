@@ -1,0 +1,32 @@
+
+
+.navbar-sec{
+    background: rgb(0,20,36);
+background: linear-gradient(90deg, rgba(0,20,36,0.8939950980392157) 18%, rgba(12,9,121,0.804359243697479) 77%);
+}
+.logo-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+
+.carrito{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vh;
+}
+
+
+.logo-carrito img{
+    width: 35px;
+    height: 32px;
+    margin-top: 10px;
+
+}
+    

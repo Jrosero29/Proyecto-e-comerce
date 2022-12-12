@@ -1,27 +1,72 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-     <div id="body">
-    <div class = "containerFormulario">
-        <h1>Login</h1>
-        <form action="">
+
+ <!-- barra de navegacion-->
+ 
+    <div class="container-fluid navbar navbar-expand-lg navbar-light" style="background-color: #00BFBD;">
+
+
+      <a class="navbar-brand" href=""><img src="../../../assets/WhatsApp_Image_2022-10-17_at_10.08.09_PM-removebg-preview (1).jpg" width="100px" alt=""></a>
+
+      <form class="d-flex">
+        <input class="form-control me-2"  type="search"  placeholder="¿Que estas buscando"  aria-label="Search">
+        <button type="button" class="btn btn-dark">Buscar</button>
+      </form>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          
+          <li class="nav-item mt-2">
+            <a  routerLink="/login"><img src="../../../assets/contrasena.png" width="50px" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../../assets/carro-de-la-carretilla.png" width="50px" alt=""></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="../../assets/me-gusta.png" width="50px" alt="">
+            </a>
             
-            
-            <input type="Username" name="Username" placeholder="Username" required maxlength="15" min="15">
-            
-            
-            <input type="password" placeholder="Password"><br>
-            
-        </form>
-        <div class="caja">
-            <input type="checkbox" name="" id="">
-            <label for="checkbox">Remember me</label>
-        
-        <button>LOG IN</button>
-        <h6>Forget password</h6>
-        <div class="member">
-        <h6>Not a member? <a href="Sign up now">Sign up now</a></h6>
-        </div>
+          </li>
+         
+        </ul>
+   
+      </div>
     </div>
+ 
+
+
+  <div class="cuerpo">
+    <div class = "containerFormulario">
+       <h1>Login</h1>
+       <form action="">
+
+ 
+           <input type="Username" name="Username" placeholder="Username" required maxlength="15" min="15">
+           
+           
+           <input type="password" placeholder="Password"><br>
+           
+       </form>
+       <div class="caja">
+           <input type="checkbox" name="" id="">
+           <label for="checkbox">Remember me</label>
+       
+       <button>LOG IN</button>
+       <h6>Forget password</h6>
+       <div class="member">
+       <h6>Not a member? <a href="Sign up now">Sign up now</a></h6>
+       </div>
+   </div>
 </div>
-    
    
 
+
+
+
+
+
+  
+     

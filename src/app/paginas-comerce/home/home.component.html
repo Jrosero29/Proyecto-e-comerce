@@ -5,10 +5,22 @@
         <div class="container-fluid">
           <a class="navbar-brand" href=""><img src="../../assets/ARM.png" width="100px" alt=""></a>
     
-          <form class="d-flex">
-            <input class="form-control me-2"  type="search"  placeholder="¿Que estas buscando"  aria-label="Search">
-            <button type="button" class="btn btn-dark">Buscar</button>
+          <form >
+            
+              <input type="text" placeholder="search..."
+              matInput
+              [formControl]="control"
+              [matAutocomplete]="auto"
+               >
+               <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+              <mat-option *ngFor="let glosario  of filGlosario |async" [value]="glosario">
+                <a routerLink="/productos">{{glosario}}</a>
+              </mat-option>
+             
+               </mat-autocomplete>
+            
           </form>
+          
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

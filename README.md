@@ -30,4 +30,4 @@ Actualización angular componenetes.
 
 Modificación en los componentes de Angular e-commerce.
 
-cambios en diseño del botón de búsqueda.
+cambios en diseño del botón de búsqueda

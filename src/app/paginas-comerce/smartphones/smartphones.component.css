@@ -1,0 +1,19 @@
+.navbar-brand{
+    width: 15rem;
+}
+
+.navbar-brand img{
+    border-radius: 30px;
+    width: 80px;
+    opacity: 0.9;
+}
+.d-flex{
+    width: 50rem;
+}
+.nav-item{
+    margin-left: 10rem;
+}
+
+body{
+    width: 100%;
+}

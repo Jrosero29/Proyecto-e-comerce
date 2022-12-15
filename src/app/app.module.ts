@@ -11,10 +11,12 @@ import { LoginComponent } from './paginas-comerce/login/login.component';
 import { ComponentescomerceModule } from './componentescomerce/componentescomerce.module';
 import { PaginasComerceModule } from './paginas-comerce/paginas-comerce.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SmartphonesComponent } from './paginas-comerce/smartphones/smartphones.component';
+import { ComputacionComponent } from './paginas-comerce/computacion/computacion.component';
 
 @NgModule({
   declarations: [
-    AppComponent,HomeComponent,ProductosComponent,ContactoComponent,LoginComponent
+    AppComponent,HomeComponent,ProductosComponent,ContactoComponent,LoginComponent, SmartphonesComponent, ComputacionComponent
     
     
   ],

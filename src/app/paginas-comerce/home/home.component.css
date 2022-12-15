@@ -8,6 +8,21 @@ form{
     margin-left: 10rem;
 }
 
+input{
+    width:40rem;
+    border-radius: 10px;
+}
+img.marca{
+    border-radius: 100px;
+    opacity: 70%;
+}
+
+
+.container-fluid{
+    background: aqua;
+    padding-top: 1%;
+    
+}
 
 
 .carousel .carousel-item {
@@ -22,6 +37,7 @@ form{
       top: 0;
       left: 0;
       min-height: 60vh;
+      border-radius: 10px;
   }
 
 #elementos{

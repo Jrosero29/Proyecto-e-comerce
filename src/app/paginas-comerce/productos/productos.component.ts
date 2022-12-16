@@ -1,92 +1,82 @@
 import { Component, OnInit } from '@angular/core';
+import { DatosService } from 'src/app/services/datos.services';
+import { NgForm } from '@angular/forms';
+import { Datos } from 'src/app/models/datos.model';
 
 
 @Component({
-  selector: 'app-productos',
+  selector: 'app-admin',
   templateUrl: './productos.component.html',
   styleUrls: ['./productos.component.css']
 })
-export class ProductosComponent  {
+export class ProductosComponent implements OnInit {
 
-  articulo={
-    codigo:0,
-    nombre:'',
-    precio:0
+  constructor(public datosService: DatosService) { }
 
-  };
-  articulos = [
-    {codigo:1, nombre:'samsung', precio:350 },{codigo:2, nombre:'xiaomi', precio:450},{codigo:3, nombre:'apple', precio:950}
-  ];
-
-registrosCreados(){
-
-  return this.articulos.length > 0;
-}
-
-borrar(codigo:number){
-  for(let i=0; this.articulos.length > i; i++ )
-  if(this.articulos[i].codigo==codigo){
-    this.articulos.splice(i, 1);
-
-    return ;
-    
+  ngOnInit(): void {
+    this.getDatos()
   }
-}
-agregarElemento(){
-if(this.articulo.codigo==0){
-  alert('Campo de codigo vacio');
-  return;
-}   
-
-for(let i=0; this.articulos.length > i; i++ )
-if(this.articulos[i].codigo==this.articulo.codigo ){
-  
-  alert('El codigo del elemento ya existe');
-  
-  return;
-  }
-    this.articulos.push({codigo:this.articulo.codigo ,nombre:this.articulo.nombre,precio:this.articulo.precio});
-
  
- this.articulo.codigo=0;
- this.articulo.nombre='';
- this.articulo.precio=0; 
-}
-seleccionar(articulo:{codigo:number, nombre:string, precio:number}){
-this.articulo.codigo=articulo.codigo;
-this.articulo.nombre=articulo.nombre;
-this.articulo.precio=articulo.precio;
-}
-actualizar(){
-  for(let i=0; this.articulos.length > i; i++ ){
-    if(this.articulos[i].codigo==this.articulo.codigo ){
+  getDatos(){
   
-      this.articulos[i].nombre=this.articulo.nombre;
-      this.articulos[i].precio=this.articulo.precio;
-      
-      return;
+   let response = this.datosService.getDatos()
+
+  // traduce el observable, hay que suscribirse
+   response.subscribe((res: any) => {
+   this.datosService.datos = res.data 
+   console.log(this.datosService.datos)
+   })
   }
 
-}
-alert('este codigo no existe para actualizar');
 
+  createDatos(form: NgForm){
+    console.log(form.value)
 
-    this.agregarElemento();
-    for(let i=0; this.articulos.length > i; i++ ){
-      if(this.articulos[i].codigo!=this.articulo.codigo ){
-        
-      var anwser= prompt('Desea agregar este artículo Si/No')
-      if (anwser=='Si'){
-        this.agregarElemento();
-        return;
-   }else{
-    if(anwser=='No')
-    alert('El proceso ha incluido');
-return;
-   }
-
-      }
-      
+    if (form.value._id){
+      this.updateDatos(form.value)
+      return
     }
+
+    delete form.value._id // null elimina el id
+
+    //deconstruir el objeto
+    let { name, stock } = form.value
+
+    if(!name || !stock)
+    return alert("Por favor diligencie todos los campos")
+    
+    this.datosService.createDatos(form.value).subscribe((res: any) => {
+      this.getDatos() // para actualizar la tabla
+      alert(res.msg);
+      this.datosService.currentDatos = new Datos()
+    })
   }
+
+  deleteDatos(id: string, name: string)
+  {
+
+    let isDeleted = confirm (`Esta seguro que desea eliminar los datos"${name}"`);
+
+    if (isDeleted){
+
+    this.datosService.deleteDatos(id).subscribe((res: any) =>{
+      this.getDatos();
+      alert(res.msg || 'error');
+    });
+    return;
+    }
+    return;
+    }
+
+    updateDatos(data:Datos){
+      this.datosService.updateDatos(data._id, data).subscribe((res) => {
+        alert("Actualización exitosa")
+        this.getDatos()
+        this.datosService.currentDatos
+      })
+    }
+
+    fillForm(datos: Datos){
+    this.datosService.currentDatos =datos
+}
 }

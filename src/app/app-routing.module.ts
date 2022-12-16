@@ -4,6 +4,7 @@ import { HomeComponent } from "./paginas-comerce/home/home.component";
 import {ContactoComponent} from "./paginas-comerce/contacto/contacto.component";
 import {LoginComponent} from "./paginas-comerce/login/login.component";
 import {ProductosComponent} from "./paginas-comerce/productos/productos.component";
+
 const routes: Routes = [
 {
   path:'',
@@ -21,7 +22,12 @@ const routes: Routes = [
 {
   path:'productos',
   component:ProductosComponent
-} 
+},
+{
+  path:'administrador',
+  component:ProductosComponent
+}
+
 ];
 
 @NgModule({

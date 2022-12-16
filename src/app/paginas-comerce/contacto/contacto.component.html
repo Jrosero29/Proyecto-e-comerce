@@ -1,5 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=""><img class="marca" src="../../assets/ARM.png" width="100px" alt=""></a>
 
-
+      <form >
+        
+          <input type="text" placeholder="search..."
+          matInput
+          [formControl]="control"
+          [matAutocomplete]="auto"
+           >
+           <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+          <mat-option *ngFor="let glosario  of filGlosario |async" [value]="glosario">
+            <a routerLink="/productos">{{glosario}}</a>
+          </mat-option>
+         
+           </mat-autocomplete>
+        
+      </form>
+      
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          
+          <li class="nav-item">
+            <a  routerLink="/login"><img class="login" src="../../assets/contrasena.png" width="50px" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/contacto"><img class="contact" src="../../../assets/contacto.png" width="50px" alt=""></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="" width="50px" alt="">
+            </a>
+            
+          </li>
+         
+        </ul>
+   
+      </div>
+    </div>
+  </nav>
 
 
 <div id="contact">
@@ -65,4 +108,3 @@
     
       </div>
      </div>
-

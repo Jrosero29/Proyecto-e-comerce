@@ -1,31 +1,55 @@
 .navbar-brand{
     width: 15rem;
 }
-
-.navbar-brand img{
-    border-radius: 30px;
-    width: 80px;
-    opacity: 0.9;
-}
-.d-flex{
-    width: 50rem;
+form{
+    width: 40rem;
 }
 .nav-item{
     margin-left: 10rem;
 }
 
-body{
-    width: 100%;
-    background-color: rgb(224, 219, 219);
-}   
+input{
+    width:40rem;
+    border-radius: 10px;
+}
+img.marca{
+    border-radius: 100px;
+    opacity: 90%;
+}
 
 
+.container-fluid{
+    background: aqua;
+    padding-top: 1%;
+    
+}
 
 
+.carousel .carousel-item {
+    height: 60vh;
 
 
+}
+  
+.carousel-item img {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      min-height: 60vh;
+      border-radius: 10px;
+}
 
-.carousel-inner img {
+#elementos{
+    display:flex;
+    justify-content: space-between;
+}
+.row {
+    display: flex;
+    justify-content:center ;
+}
+
+carousel-inner img {
     width: 70px;
     max-height: 450px;
 }
@@ -59,16 +83,3 @@ body{
         display:none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

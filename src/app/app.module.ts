@@ -33,7 +33,8 @@ import { MatAutocompleteModule} from "@angular/material/autocomplete";
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

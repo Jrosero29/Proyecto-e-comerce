@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
     this.url = event.target.src;
   }
   glosario:string[]=[
-    'samsung', 'xiaomi','apple'
+    'samsung', 'xiaomi','apple','smatphones'
   ];
   control = new FormControl();
   filGlosario: Observable<string[]> | undefined;

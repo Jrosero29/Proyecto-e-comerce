@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,29 +11,25 @@ import { LoginComponent } from './paginas-comerce/login/login.component';
 import { ComponentescomerceModule } from './componentescomerce/componentescomerce.module';
 import { PaginasComerceModule } from './paginas-comerce/paginas-comerce.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {HttpClientModule} from '@angular/common/http';
-import { MatAutocompleteModule} from "@angular/material/autocomplete";
-
-
-
-
+import { SmartphonesComponent } from './paginas-comerce/smartphones/smartphones.component';
+import { ComputacionComponent } from './paginas-comerce/computacion/computacion.component';
 
 @NgModule({
   declarations: [
-    AppComponent,HomeComponent,ProductosComponent,ContactoComponent,LoginComponent, 
+    AppComponent,HomeComponent,ProductosComponent,ContactoComponent,LoginComponent, SmartphonesComponent, ComputacionComponent
     
     
   ],
   imports: [
     BrowserModule,
-     AppRoutingModule,
+    AppRoutingModule,
     ComponentescomerceModule,
     PaginasComerceModule,
     FormsModule,
-    BrowserAnimationsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    MatAutocompleteModule
+    BrowserAnimationsModule
+ 
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,50 +1,74 @@
 .navbar-brand{
     width: 15rem;
 }
-form{
-    width: 40rem;
+
+.navbar-brand img{
+    border-radius: 30px;
+    width: 80px;
+    opacity: 0.9;
+}
+.d-flex{
+    width: 50rem;
 }
 .nav-item{
     margin-left: 10rem;
 }
 
-input{
-    width:40rem;
-    border-radius: 10px;
+body{
+    width: 100%;
+    background-color: rgb(224, 219, 219);
+}   
+
+
+
+
+
+
+
+.carousel-inner img {
+    width: 70px;
+    max-height: 450px;
 }
-img.marca{
-    border-radius: 100px;
-    opacity: 90%;
+
+.carousel-inner{
+    margin-top: 20px;
+    margin-left: 130px;
+ height: 100%;
+ width: 80%;
+ border-radius: 30px;
+}    
+
+
+
+
+
+.cartas{
+    background-color: rgb(224, 219, 219);
 }
 
 
-.container-fluid{
-    background: aqua;
-    padding-top: 1%;
-    
+
+@media screen and (max-width: 480px){
+    #carouselExampleIndicators{
+        height: auto;
+    }
+    #contenido{
+        width: auto;
+    }
+    #container-fluid{
+        display:none;
+    }
 }
 
 
-.carousel .carousel-item {
-    height: 60vh;
 
 
-  }
-  
-  .carousel-item img {
-      position: absolute;
-      object-fit: cover;
-      top: 0;
-      left: 0;
-      min-height: 60vh;
-      border-radius: 10px;
-  }
 
-#elementos{
-    display:flex;
-    justify-content: space-between;
-}
-.row {
-    display: flex;
-    justify-content:center ;
-}
+
+
+
+
+
+
+
+

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Comerce
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
@@ -29,5 +30,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Actualización angular componenetes.
 
 Modificación en los componentes de Angular e-commerce.
+prueba de los cambios del error
+=======
+# Proyecto-e-comerce
+Proyecto de un e-comerce
 
-cambios en diseño del botón de búsqueda
+>>>>>>> 4e45754d45304ab2b8e327f5ea3c74be63153996
